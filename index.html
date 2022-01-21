@@ -8,49 +8,79 @@
     <title>sidebar</title>
   </head>
   <body>
-    <nav class="sidebar">
+    <div class="overlay"></div>
+    <div class="sidebar">
       <header class="sidebar-header">
-        <a href="index.html" class="sidebar-header__icon">
-          <img src="img/burgerclose.svg" alt="" srcset="" />
-        </a>
-        <img
-          class="sidebar-header__icon"
-          src="img/Group.svg"
-          alt=""
-          srcset=""
-        />
-        <a href="http://" class="sidebar-header__icon">
-          <img src="img/search.svg" alt="" srcset="" />
-        </a>
+        <div class="sidebar-header__inner">
+          <button href="#" class="sidebar-button">
+            <img src="img/burgerclose.svg" alt="" class="sidebar-button__img" />
+          </button>
+          <img class="sidebar-header__logo" src="img/Group.svg" alt="logotip" />
+          <button href="#" class="sidebar-button">
+            <img src="img/search.svg" alt="" class="sidebar-button__img" />
+          </button>
+        </div>
       </header>
-      <main class="sidebar-main">
-        <div class="sidebar-main__list">
-          <p class="sidebar-main__item">Ремонт техники</p>
-          <p class="sidebar-main__item">Услуги и сервисы</p>
-          <p class="sidebar-main__item">Корпоротивным клиентам</p>
-          <p class="sidebar-main__item">Продавцам техники</p>
-          <p class="sidebar-main__item">Партнерам</p>
-          <p class="sidebar-main__item">Производителям</p>
-          <p class="sidebar-main__item">Наши сервисные центры</p>
-          <p class="sidebar-main__item">Контакты</p>
-        </div>
-      </main>
-      <footer class="sidebar-footer">
-        <div class="sidebar-footer__icons">
-          <img src="img/call.svg" alt="" srcset="" />
-          <img src="img/chat.svg" alt="" srcset="" />
-          <img src="img/profile.svg" alt="" srcset="" />
-        </div>
-        <div class="sidebar-footer__contacts">
-          <p class="sidebar-footer__email">mail@cps.com</p>
-          <p class="sidebar-footer__number">8 800 890 8900</p>
-        </div>
-        <div class="sidebar-footer__lang">
-          <p>RU</p>
-          <p>EN</p>
-          <p>CH</p>
-        </div>
-      </footer>
-    </nav>
+      <div class="inner-wrapper">
+        <main class="sidebar-main">
+          <ul class="sidebar-main__list">
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button sidebar-main__button_active">
+                Ремонт техники
+              </button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">Ремонт техники</button>
+            </li>
+
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">
+                Корпоротивным клиентам
+              </button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">Продавцам техники</button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">Партнерам</button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">Производителям</button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">
+                Наши сервисные центры
+              </button>
+            </li>
+            <li class="sidebar-main__item">
+              <button class="sidebar-main__button">Контакты</button>
+            </li>
+          </ul>
+        </main>
+        <footer class="sidebar-footer">
+          <div class="sidebar-footer__button">
+            <button href="#" class="sidebar-button">
+              <img src="img/call.svg" alt="" class="sidebar-button__img" />
+            </button>
+            <button href="#" class="sidebar-button">
+              <img src="img/chat.svg" alt="" class="sidebar-button__img" />
+            </button>
+            <button href="#" class="sidebar-button">
+              <img src="img/profile.svg" alt="" class="sidebar-button__img" />
+            </button>
+          </div>
+          <ul class="sidebar-footer__contacts">
+            <li class="sidebar-footer__email">mail@cps.com</li>
+            <li class="sidebar-footer__number">8 800 890 8900</li>
+          </ul>
+
+          <ul class="sidebar-footer__langs">
+            <li class="sidebar-footer__lang sidebar-footer__lang_active">RU</li>
+            <li class="sidebar-footer__lang">EN</li>
+            <li class="sidebar-footer__lang">CH</li>
+          </ul>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
